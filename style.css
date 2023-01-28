@@ -161,18 +161,33 @@
     
    
 }
-@media (max-width:552px) and (min-width:250px){
+@media (max-width:772px) and (min-width:250px){
   .block{
       flex-direction: column !important;
   }
+  .coffee{
+    height: calc(83px + (47 + 47 * 0.7) * ((100vw - 320px)/1400));
+    width: calc(83px + (47 + 47 * 0.7) * ((100vw - 320px)/1400));
+  }
+  .top__left-block p{
+    min-width: 70% ;
+    font-size:calc(12px + ( 7 + 7 *0.7) * ((100vw - 320px)/1400));
+    padding: 20px 0;
+
+}
+.top__left-block h1{
+    font-weight: 200;
+    font-size: calc(27px + (13 + 13 * 0.7) * ((100vw - 320px)/1400));
+    
+}
   .bottom__left-block{
-    justify-content: center;
-    align-items: center;
+    
+
   }
   .cards-coffee{
     grid-template-columns: repeat(2,1fr) !important;
     align-items: center;
-    width: 70%;
+    width: 100%;
     
   }
   
