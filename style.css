@@ -33,7 +33,8 @@
 }
 .right{
     flex: 1;
-    background-color: purple;
+    margin: 0 100px;
+    
 }
 .top__left-block{
     min-height: 20%;
@@ -41,14 +42,14 @@
 
 }
 .top__left-block p{
-    min-width: 70% ;
-    font-size:calc(12px + 7*(100vw/1400));
+    width: 70% ;
+    font-size:calc(9px + 7*(100vw/1400));
     padding: 20px 0;
 
 }
 .top__left-block h1{
     font-weight: 200;
-    font-size: calc(27px + 13 * (100vw/1400));
+    font-size: calc(20px + 10 * (100vw/1400));
     
 }
 .cards{
@@ -130,9 +131,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: rgb(250, 250, 250);
-    background-color: black;
+   
+    
     text-align: center;
   }
   .coffee img{
@@ -143,7 +143,7 @@
 .bottom__left-block h3{
     font-weight: 200;
     text-align: start;
-    font-size: calc(28px + 12 * (100vw/1400));
+    font-size: calc(25px + 9 * (100vw/1400));
 }
 .bottom__left-block .btn{
     height: 60px;
@@ -158,16 +158,48 @@
     .block{
         flex-direction: column !important;
     }
+    .right{
+      flex: 1;
+      margin: 0 !important;
+      
+  }
     
    
 }
-@media (max-width:772px) and (min-width:250px){
+@media (max-width:410px) and (min-width:250px){
+  .cards-coffee{
+    grid-template-columns: repeat(2,1fr) !important;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .coffee{
+    margin: 0 25px;
+  }
+  .bottom__right-block{
+    display: none;
+  }
+}
+@media (max-width:772px) and (min-width:400px){
   .block{
       flex-direction: column !important;
   }
   .coffee{
     height: calc(83px + (47 + 47 * 0.7) * ((100vw - 320px)/1400));
     width: calc(83px + (47 + 47 * 0.7) * ((100vw - 320px)/1400));
+  }
+  .card-pl {
+    flex-direction: column;
+    height: calc(66px + 24 *(100vw/1400));
+  }
+  .card-pl #text2{
+    width: 100%;
+    height: 100%;
+    
+  }
+  .card-pl #text3{
+    width: 100%;
+    height: 100%;
   }
   .top__left-block p{
     min-width: 70% ;
@@ -185,11 +217,106 @@
 
   }
   .cards-coffee{
-    grid-template-columns: repeat(2,1fr) !important;
+    grid-template-columns: repeat(4,1fr) !important;
     align-items: center;
     width: 100%;
     
   }
   
  
+}
+.top__right-block{
+  min-height: 20%;
+
+
+}
+.top__right-block p{
+  width: 50% ;
+  font-size:calc(9px + 7*(100vw/1400));
+  padding: 20px 0;
+
+}
+.top__right-block h1{
+  font-weight: 200;
+  font-size: calc(20px + 10 * (100vw/1400));
+  
+}
+.middl__right-block{
+  min-height: 21%;
+  
+  flex-direction: column;
+
+ 
+}
+.middl__right-block .top_info{
+  width: 80%;
+  min-height: 50%;
+  display: flex;
+  
+} 
+.left-info{
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+.right-info{
+  flex: 0.8;
+  flex-direction: column;
+}
+.right-info h3{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 10px;
+  
+}
+.right-info h4{
+  font-size: 18px;
+  font-weight: 100;
+  padding: 5px 10px;
+}
+.right-info a{
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: gray;
+
+}
+.a-a{
+
+  margin: 20px 0;
+}
+.bottom__btn{
+  display: flex;
+  width: 60%;
+
+  
+}
+.bottom__btn button{
+  flex: 1;
+  height: 50px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+.btn-2{
+  margin-left: 20px !important;
+}
+.bottom__right-block{
+  min-height: 30%;
+
+  margin: 50px 0;
+  
+
+  
+  flex-direction: column;
+}
+.bottom__right-block p{
+  width: 70%;
+  font-size:calc(10px + 8*(100vw/1400));
+  margin: 20px 0;
+}
+.bottom__right-block h1{
+  font-weight: 200;
+  font-size: calc(20px + 10 * (100vw/1400));
+  
 }
